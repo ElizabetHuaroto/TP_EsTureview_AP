@@ -9,7 +9,7 @@
             <span>Registrarse con Google</span>
           </a>
         </div>
-        <form [formGroup]="form" >
+        <form [formGroup]="form" (submit)="aceptar()" >
           <div class="fields">
             <div class="field">
               <label for="fullname">Nombre y Apellidos</label>
