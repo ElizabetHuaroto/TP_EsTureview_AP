@@ -7,5 +7,5 @@ export class User
   passwordUser: string="";
   districUser: string="";
   ageUser:number=0;
-  photo: string = "";
+
 }
