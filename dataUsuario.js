@@ -12,11 +12,11 @@ module.exports = function () {
         photo: "https://aufloria.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-02-18-at-14.18.38-8.jpeg"
       },
 
-      
+
       {
         id:2,
         nameUser: "Camilo andrade Guerra",
-        typeUser: "colegial",
+        typeUser: "universitario",
         emailUser:"Camilo@gmail.com",
         passwordUser: "123%&",
         districUser:"Los Olivos",
@@ -36,7 +36,7 @@ module.exports = function () {
       {
         id:4,
         nameUser: "Karina Cano Cardenas",
-        typeUser: "colegial",
+        typeUser: "universitario",
         emailUser:"karina@gmail.com",
         passwordUser: "123%&",
         districUser:"San Miguel",
