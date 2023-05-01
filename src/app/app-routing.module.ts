@@ -20,7 +20,7 @@ const routes: Routes = [
   },
   {
     path: 'registro',
-    component: GetOutComponent
+    component: CreateEditComponent //prueba
   },
   {
     path: 'ingreso',
