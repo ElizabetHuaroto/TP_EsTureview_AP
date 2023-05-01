@@ -65,7 +65,7 @@
             </div>
             <div class="info">
               <h2 class="name">{{ school.name }}</h2>
-              <p class="district" *ngIf="userType === 'colegial'; else course">{{ school.district }}</p>
+              <p class="district" *ngIf="userType === 'padre de familia'; else course">{{ school.district }}</p>
               <ng-template #course>
                 <p class="course">{{ school.course }}</p>
               </ng-template>
