@@ -35,7 +35,7 @@ aceptar():void{
   this.user.emailUser = this.form.value ['emailUser'];
   this.user.districUser = this.form.value ['districUser'];
   this.user.ageUser = this.form.value ['ageUser'];
-
+  this.user.passwordUser = this.form.value ['passwordUser'];
   if(this.form.value['nameUser'].length>0 &&
   this.form.value['typeUser'].length>0 &&
   this.form.value['districUser'].length>0)
