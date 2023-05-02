@@ -21,7 +21,7 @@
   <section class="recents">
     <h2>Busquedas recientes</h2>
     <div class="schools">
-      <a [href]="'teachers/' + teacher.id" *ngFor="let teacher of lista">
+      <a routerLink="'teachers/' + teacher.id" *ngFor="let teacher of lista">
         <div class="school">
           <div class="image">
             <img class="photo" [src]="teacher.photo">
