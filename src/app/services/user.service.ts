@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { Observable, Subject, map } from 'rxjs';
+import { BehaviorSubject, Observable, Subject, map } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import{ MatTableDataSource } from'@angular/material/table';
 import { User } from '../models/user';
@@ -11,6 +11,10 @@ const baseUrl = environment.base;
 export class UserService {
   private url = `${baseUrl}/users`;
 private listaCambio = new Subject<User[]>();
+//CAMBIO NAV
+public isEnterSubject = new BehaviorSubject<boolean>(false);
+  public isEnter$ = this.isEnterSubject.asObservable();
+
   constructor(private http: HttpClient) { }
 
   getAll() {
@@ -37,4 +41,7 @@ return this.http.get<User[]> (this.url);
   getlist(){
     this.listaCambio.asObservable();
   }
+
+
+
 }
